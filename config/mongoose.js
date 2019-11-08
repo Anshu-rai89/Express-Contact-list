@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 
 // connect it with database
 
-mongoose.connect('mongodb://localhost:27017/contact_list_db',{ useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/contact_list_db',{ useUnifiedTopology: true });
 
 // aquire the connection 
 
