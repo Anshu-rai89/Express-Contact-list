@@ -1,0 +1,38 @@
+<html>
+    <head><title>
+        <%=title%>
+    </title>
+
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+        h1{
+            font-weight: 900;
+            text-align: center;
+            color: brown;
+        }
+
+        p{
+            text-align: center;
+            color:chocolate;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>WElcome to My Contact LIst </h1>
+        <p>Want to KNow more about me !!</p>
+
+        <div>
+        <ul>
+                <% for(let i=1;i<=5;i++) { %>
+                    <li>
+                        <%=i%>
+                    </li>
+                    <%}%>
+        </ul>
+        </div>
+    </body>
+</html>
