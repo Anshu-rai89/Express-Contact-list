@@ -7,8 +7,9 @@ const Contact=require('./models/contact.js');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', './views');
 app.use(express.urlencoded());
+app.use(express.static('assets'));
 
 /*var contactlist=
 [
@@ -59,7 +60,19 @@ app.post('/create-contact',function(req,res)
   );
 });
 
+// deleting the contacts
 
+app.get('/delete-contact',function(req,res)
+{   let id=req.query.id;
+
+    Contact.findByIdAndDelete(id,function(err)
+    {
+         if(err) { console.log("Errorin deleteing "); return ;} 
+
+         return res.redirect('/');
+    });
+   
+});
 // server fired here 
 app.listen(port,function(err)
 {

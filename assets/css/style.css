@@ -1,0 +1,56 @@
+.title
+{
+   font-size:30px;
+   font-weight:bolder;
+   text-align:center;
+   color:grey;
+}
+
+.contact
+{
+   display: flex;
+   height: 40px;
+   width:30%;
+   justify-content: center;
+   margin: 20px;
+   background-color: blue;
+   color:white;
+   font-size: 15px;
+   font-family: sans-serif;
+   font-weight: 200;
+   margin-left: 33%;
+  
+}
+
+.name
+{
+   display: inline-block;
+   height: 40px;
+   width:100px;
+
+}
+.phone
+{
+   display: inline-block;
+   height: 40px;
+   width: 100px;
+  
+}
+.delete-button
+{
+   height: 40px;
+   width: 40px;
+   display: inline-block;
+  
+}
+
+.form
+{
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+.contact:hover
+{
+   background-color: grey;
+}
