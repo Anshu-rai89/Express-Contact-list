@@ -1,0 +1,5 @@
+# igonre node_moduels
+**/node_moduels/**
+
+# ignore Ds_Store
+**/.DS_Store

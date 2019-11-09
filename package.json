@@ -8,5 +8,11 @@
     "start": "node index.js"
   },
   "author": "Anshu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.9"
+  }
 }
