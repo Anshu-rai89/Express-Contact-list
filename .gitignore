@@ -1,5 +1,5 @@
 # igonre node_moduels
-**/node_moduels/**
+**/node_modules/**
 
 # ignore Ds_Store
 **/.DS_Store
