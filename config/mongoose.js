@@ -3,8 +3,9 @@
 const mongoose=require('mongoose');
 
 // connect it with database
+const uri = "mongodb+srv://Anshu-rai89:Anshu%401998@cluster0-8amks.mongodb.net/test?retryWrites=true&w=majority";
 
-mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/contact_list_db',{ useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI ||uri, { useNewUrlParser: true , useUnifiedTopology: true });
 
 // aquire the connection 
 
